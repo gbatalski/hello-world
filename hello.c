@@ -35,7 +35,9 @@ const char message[] =
 void _start() {
 	//write(1, message, sizeof(message) - 1);
 	syscall(SYS_write, 1, message, sizeof(message) - 1);
-
+	while (1){
+	  sleep(1);
+	}
 	//_exit(0);
 	syscall(SYS_exit, 0);
 }
