@@ -1,7 +1,7 @@
 C_TARGETS := $(addsuffix hello, $(wildcard */))
 
 CC := gcc
-CFLAGS := -static -Os -nostartfiles -fno-asynchronous-unwind-tables
+CFLAGS := -static -Os  -fno-asynchronous-unwind-tables
 
 .PHONY: all
 all: $(C_TARGETS)
